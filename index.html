@@ -6,25 +6,20 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Title</title>
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 
 <body>
 	<div id="main">
-		<h1>Объявление</h1>
-		<p>AAAAAAAAAAA</p>
-	<button type="button" id="test">тест</button>
-	</div>
-	<form id="form">
+		<h1>Создание объявления</h1>
 		<input type="text" placeholder="id ad" id="id_ad">
 		<input type="text" placeholder="Цена" id="price">
 		<input type="text" placeholder="Валюта" id="currency">
-		<button id="create_ad" onclick="hello()">Создать объявление</button>
-	</form>
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+		<button id="test" onclick="test()">тест</button>
+	</div>
 	<script>
-		var WebApp = window.Telegram.WebApp;
-		function hello(){
-			WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
+		function test(){
+			alert(2+2);	
 		}
 	</script>
 </body>
