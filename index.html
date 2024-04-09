@@ -22,8 +22,9 @@
 	</form>
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script>
+		var WebApp = window.Telegram.WebApp;
 		function hello(){
-			alert(`Добро пожаловать`);
+			WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
 		}
 	</script>
 </body>
