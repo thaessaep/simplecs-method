@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Title</title>
+</head>
+
+<body>
+	<div id="main">
+		<h1>Объявление</h1>
+		<p>AAAAAAAAAAA</p>
+	<button type="button" id="test">тест</button>
+	</div>
+	<form id="form">
+		<input type="text" placeholder="id ad" id="id_ad">
+		<input type="text" placeholder="Цена" id="price">
+		<input type="text" placeholder="Валюта" id="currency">
+		<button id="create_ad">Создать объявление</button>
+	</form>
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<script>
+		let tg = window.Telegram.WebApp
+    let test = document.getElementById("test")
+    let create_ad = document.getElementById("create_ad")
+
+    test.addEventListener("click", () => {
+      document.getElementById("id_ad").value = "kjdshfjsdhfkjdshfjsdh"
+    })
+    create_ad.addEventListener("click", () => {
+      tg.close();
+    })
+	</script>
+</body>
+
+</html>
