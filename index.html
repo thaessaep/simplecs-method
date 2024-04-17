@@ -29,10 +29,14 @@
 		let tg = window.Telegram.WebApp;
 		let id_ad = document.getElementById("id_ad");
 		let create_ad = document.getElementById("create_ad");
+		
+		// Call as soon as your page is ready for the user to see
+		tg.ready();
+
+		// Expand your web app to full screen
 		tg.expand();
 
 		create_ad.addEventListener("click", () => {
-			console.log(tg.initDataUnsafe);
 			id_ad.value = tg.initDataUnsafe.query_id;
 		});
 	</script>
