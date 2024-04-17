@@ -26,15 +26,21 @@
 
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script>
+		console.log(1);
 		let tg = window.Telegram.WebApp;
+		console.log(2);
 		let id_ad = document.getElementById("id_ad");
+		console.log(3);
 		let create_ad = document.getElementById("create_ad");
+		console.log(4);
 		
 		// Call as soon as your page is ready for the user to see
 		tg.ready();
+		console.log(5);
 
 		// Expand your web app to full screen
 		tg.expand();
+		console.log(6);
 
 		create_ad.onclick = function() {
 			id_ad.value = 432;
